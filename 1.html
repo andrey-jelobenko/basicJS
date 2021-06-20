@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        'use strict';
+
+        /*
+        Задать температуру в градусах по Цельсию.
+        Для задания температуры решил использовать ввод данных от пользователя
+        Вывести в alert соответствующую температуру в градусах по Фаренгейту.Подсказка:
+        расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32;
+        где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+        */
+
+        let tC = +prompt("Укажите температуру в градусах по Цельсию");
+        let tF = (9 / 5) * tC + 32;
+        alert("Температура в градусах по Фаренгейту: " + tF.toFixed(2));
+
+    </script>
+
+</body>
+
+</html>
