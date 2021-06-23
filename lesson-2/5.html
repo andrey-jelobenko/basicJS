@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        /*
+        5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение.
+        */
+
+        function plus(a, b) {
+            return a + b;
+        }
+        function minus(a, b) {
+            return a - b;
+        }
+        function multiplied(a, b) {
+            return a * b;
+        }
+        function divided(a, b) {
+            return a / b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "plus":
+                    return plus(arg1, arg2);
+                case "minus":
+                    return minus(arg1, arg2);
+                case "multiplied":
+                    return multiplied(arg1, arg2);
+                case "divided":
+                    return divided(arg1, arg2);
+                default:
+                    return "нет такой операции";
+            }
+        }
+
+        let number1 = 12;
+        let number2 = 4;
+
+        console.log("сумма: " + mathOperation(number1, number2, 'plus'));
+        console.log("разность: " + mathOperation(number1, number2, 'minus'));
+        console.log("произведение: " + mathOperation(number1, number2, 'multiplied'));
+        console.log("деление: " + mathOperation(number1, number2, 'divided'));
+        console.log("остаток от деления: " + mathOperation(number1, number2, 'remainder'));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        /*
+        4. Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя параметрами.
+        Т.е. например, функция для сложения должна принимать два числа, складывать их и возвращать результат.
+        Обязательно использовать оператор return.
+        */
+        function plus(a, b) {
+            return a + b;
+        }
+        function minus(a, b) {
+            return a - b;
+        }
+        function multiplied(a, b) {
+            return a * b;
+        }
+        function divided(a, b) {
+            return a / b;
+        }
+
+        let number1 = 12;
+        let number2 = 4;
+
+        console.log("сумма: " + plus(number1, number2));
+        console.log("разность: " + minus(number1, number2));
+        console.log("произведение: " + multiplied(number1, number2));
+        console.log("деление: " + divided(number1, number2));
+
+    </script>
+</body>
+
+</html>
